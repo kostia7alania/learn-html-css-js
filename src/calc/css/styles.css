@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    width: 285px;
+}
+.display {
+    padding:2px;
+    border: green dashed 2px;;
+    border-radius:0px;
+} 
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+.keyboard>div{
+    margin:20px 10px 20px 10px;
+}
+.keyboard>div>span{
+    padding:15px;
+    margin:10px;
+    cursor:pointer;
+    transition: .3s;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+.keyboard>div>span:hover {
+    color:red;
+    background:black;
+}
+.keyboard>div>span:active {
+    color:green;
+    background:red;
+    transform: scale(2);
+}
+
